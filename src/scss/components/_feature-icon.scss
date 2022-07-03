@@ -1,0 +1,15 @@
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-opacity);
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+
+  svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: var(--color-primary);
+  }
+}

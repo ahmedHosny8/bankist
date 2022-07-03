@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.header__layout {
+  max-width: 114rem;
+  height: 6.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.8rem;
+}
+
+@media (min-width: 48em) {
+  .header__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__menu-buttom {
+  justify-self: start;
+}
+
+.header__brand {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}

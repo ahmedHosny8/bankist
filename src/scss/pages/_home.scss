@@ -1,0 +1,197 @@
+// SECTION HERO #################################################################
+
+.section-hero {
+  margin-top: 6.4rem;
+}
+
+.section-hero__layout {
+  max-width: 114rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5.6rem 2.4rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7rem;
+}
+
+@media (min-width: 48em) {
+  .section-hero__layout {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .section-hero__layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+}
+
+.section-hero__text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.section-hero__text-box h1 {
+  font-size: 2.8rem;
+  line-height: 1.35;
+}
+
+@media (min-width: 62em) {
+  .section-hero__text-box h1 {
+    font-size: 4rem;
+    line-height: 1.35;
+  }
+}
+
+.section-hero__text-box .highlight {
+  position: relative;
+}
+
+.section-hero__text-box .highlight::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-image: var(--gradient-primary);
+}
+
+.section-hero__text-box p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+
+.section-hero__img {
+  width: 100%;
+  aspect-ratio: 2.14 / 1;
+  object-fit: cover;
+}
+
+// SECTION FEATURES #################################################################
+.section-features {
+  &__layout {
+    max-width: 114rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8rem 2.4rem;
+    border-top: 1px solid #f4e2cd;
+
+    display: grid;
+    gap: 6.4rem;
+
+    @media (min-width: 48em) {
+      gap: 2.4rem;
+    }
+  }
+
+  &__feature {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width: 48em) {
+      grid-template-columns: 1fr 1fr;
+      gap: 6.4rem;
+    }
+  }
+
+  &__feature-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &--reverse {
+      @media (min-width: 48em) {
+        grid-column-start: 2;
+        grid-row-start: 1;
+      }
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 0.4rem;
+    }
+  }
+
+  &__feature-hint {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+
+    &--reverse {
+      @media (min-width: 48em) {
+        grid-column-start: 1;
+        grid-row-start: 1;
+      }
+    }
+
+    h5 {
+      font-size: 2.3rem;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+}
+
+// SECTION OPERATIONS #################################################################
+.section-operations {
+  &__layout {
+    max-width: 114rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8rem 2.4rem;
+    border-top: 1px solid #f4e2cd;
+  }
+}
+
+// SECTION TESTIMONIAL #################################################################
+
+.section-testimonial {
+  &__layout {
+    max-width: 114rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8rem 2.4rem;
+    border-top: 1px solid #f4e2cd;
+  }
+}
+
+// section-sign-up #################################################################
+
+.section-sign-up {
+  color: #fff;
+  background-color: #33200b;
+
+  &__layout {
+    max-width: 114rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8rem 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+  }
+}

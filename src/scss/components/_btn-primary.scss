@@ -1,0 +1,24 @@
+.btn-primary,
+.btn-primary:link,
+.btn-primary:visited {
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 2.4rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--color-accent);
+  border-radius: 60rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--color-accent-shade);
+}
